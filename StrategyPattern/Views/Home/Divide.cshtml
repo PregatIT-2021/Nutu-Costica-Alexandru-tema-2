@@ -1,0 +1,15 @@
+﻿@model ComputationViewModel
+@{
+    ViewData["Title"] = "Divide";
+}
+
+<div class="text-left">
+    @if (Model.Error == null)
+    {
+        <p>@Model.A / @Model.B = @Model.Result</p>
+    }
+    else
+    {
+        <p>@Model.Error</p>
+    }
+</div>
